@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
     <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vue-mqtt@2.0.2/dist/build.js"></script>
     <script src="js/app.js"></script>
 </head>
 <body>
@@ -19,6 +20,10 @@
         </div>
         <div>
             <button @click="buttonClicked">press me</button>
+        </div>
+
+        <div>
+            MQTT subscribe: plc1200_50_pn1/demo: {{ value }}
         </div>
     </div>
 </body>
